@@ -1,6 +1,10 @@
-<div id='container'>
-<!-- Your code here -->
-
+<div id='container' ng-controller="ShortenController">
+<h2>Shorten Links</h2>
+<input ng-model="newLink"/>
+<button ng-click="addLink()">Submit</button>
+<ul>
+<li ng-repeat="link in links">{{ link }}</li>
+</ul>
 </div>
 
 

@@ -23,10 +23,6 @@ angular.module('shortly', [
       templateUrl: 'app/shorten/shorten.html',
       controller: 'ShortenController'
     })
-    .when('/:code', {
-      templateUrl: 'app/shorten/shorten.html',
-      controller: 'ShortenController'
-    })
     .otherwise('/links');
 
     // We add our $httpInterceptor into the array

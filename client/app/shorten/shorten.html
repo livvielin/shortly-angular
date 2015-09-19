@@ -1,8 +1,9 @@
 <div id='container'>
   <h2>Shorten Links</h2>
   <form name="linkForm" novalidate>
-    <input type="url" ng-model="link.url" name="link"/>
+    <input type="url" ng-model="link.url" name="link" required/>
     <span class="error" ng-show="linkForm.link.$error.url">Not valid url!</span>
+    <span class="error" ng-show="linkForm.link.$error.required && linkForm.link.$dirty">Url required!</span>
   </form>
   <button ng-click="addLink()" ng-disabled="linkForm.$invalid">Submit</button>
 </div>

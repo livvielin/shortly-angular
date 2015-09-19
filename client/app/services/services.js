@@ -27,7 +27,6 @@ angular.module('shortly.services', [])
     addLink: addLink
   };
 })
-
 .factory('Auth', function ($http, $location, $window) {
   // Don't touch this Auth service!!!
   // it is responsible for authenticating our user

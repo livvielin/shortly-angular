@@ -4,7 +4,7 @@
     <input type="url" ng-model="link.url" name="link"/>
     <span class="error" ng-show="linkForm.link.$error.url">Not valid url!</span>
   </form>
-  <button ng-click="addLink()">Submit</button>
+  <button ng-click="addLink()" ng-disabled="linkForm.$invalid">Submit</button>
 </div>
 
 

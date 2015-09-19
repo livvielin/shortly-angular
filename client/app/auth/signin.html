@@ -3,7 +3,7 @@
   <form name="signinForm" ng-submit='signin()'>
     <input type='text'ng-model='user.username' name='username' ng-minlength='5' ng-maxlength='15' required>
     <input type="password" ng-model='user.password' name='password' ng-minlength='8' required>
-    <button>signin</button>
+    <button ng-disabled="signinForm.$invalid">signin</button>
   </form>
   <a href="#/signup">Don't have an account? <strong>Signup</strong> ...</a>
   <span class="error" ng-show="signinForm.username.$error.minlength">Username is too short!</span>
